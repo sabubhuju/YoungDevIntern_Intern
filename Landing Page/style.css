@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(15, 23, 43, 0.9);
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url(Images/MealBG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 1% 5%;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: rgb(255, 119, 0);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+nav h1 i {
+    padding-right: 10px;
+}
+
+nav ul {
+    text-align: right;
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 11px 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 119, 0);
+}
+
+button {
+    padding: 10px 10px;
+    cursor: pointer;
+    font-weight: 100;
+    color: white;
+    border-radius: 5px;
+    background: rgb(255, 119, 0);
+}
+
+button:hover {
+    background: rgb(220, 136, 75);
+}
+
+nav button {
+    margin-left: 20px;
+}
+
+.main {
+    display: flex;
+    padding: 13% 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-first h1 {
+    font-size: 4rem;
+    color: rgb(246, 119, 28);
+}
+
+.main-first p {
+    max-width: 600px;
+    color: white;
+    padding: 30px 0;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+
+.main-second img {
+    border-radius: 100%;
+    max-width: 80%;
+    height: auto;
+    margin-left: 65px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 10% 10% 10%;
+  
+}
+
+.about-first img {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.about-second h3 {
+    color: rgb(255, 119, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about-second h1 {
+    color: #c5c5d0;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.about-second h1 i {
+    columns: rgb(233, 171, 56);
+}
+
+.about-second p {
+    color: #fff;
+    max-width: 600px;
+    padding-bottom: 40px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-style: italic;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.heading span {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 119, 0);
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.s-box {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.s-box img {
+    width: 160px;
+
+}
+
+.s-box h3 {
+    margin: 4px 0 10px;
+    color: rgb(255, 119, 0);
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.s-box p {
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 5rem;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.box-img {
+    width: 220px;
+    height: 220px;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.box h2 {
+    font-size: 1.3rem;
+    color: rgb(255, 119, 0);
+    font-weight: 500;
+}
+
+.box span {
+    font-size: small;
+    color: white;
+    font-weight: 400;
+}
+
+.foot1 {
+    margin-top: 50px;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.col {
+    width: 25%;
+}
+
+.col h4 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: rgb(255, 119, 0);
+}
+
+.col ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.col ul li a {
+    color: wheat;
+    font-size: 1.1rem;
+    display: block;
+    transition: .4s;
+}
+
+.contact-form {
+    padding: 50px 0;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 119, 0);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #d9d9e4;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: rgb(220, 136, 75);
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    nav {
+        padding: 1% 2%;
+    }
+
+    nav h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        padding: 11px 5px;
+    }
+
+    .main {
+        flex-direction: column;
+
+    }
+
+    .main-second img {
+        max-width: 60%;
+        margin-left: 0;
+    }
+
+    .main-first {
+        padding-top: 30px;
+    }
+
+    .main-first h1 {
+        font-size: 3rem;
+    }
+
+    .main-first p {
+        font-size: 14px;
+    }
+
+    .about {
+        flex-direction: column;
+        margin: 10% 5%;
+    }
+
+    .about-first img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-second h1 {
+        font-size: 30px;
+    }
+
+    .about-second p {
+        font-size: 14px;
+    }
+
+    .service-container,
+    .menu-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .s-box {
+        padding: 15px 20px;
+    }
+
+    .s-box p {
+        margin-bottom: 3rem;
+    }
+
+    .box {
+        margin-top: 3rem;
+    }
+
+    .box h2 {
+        font-size: 1.1rem;
+    }
+
+    .box span {
+        font-size: small;
+    }
+
+    .foot1 {
+        margin-left: 5%;
+    }
+
+    .col {
+        width: 50%;
+    }
+}
